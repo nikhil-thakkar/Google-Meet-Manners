@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-	var icon = chrome.runtime.getURL('mute.png'); // default icon for notification
+	var icon = chrome.runtime.getURL('mute.svg'); // default icon for notification
 	var message = 'Could not locate Mute control in Google Meeting.'; // default notification message
 
 	// find mute or unmute button on this Meeting page. only one of these will exist at a time
@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 		if (btn !== null) {
 			btn.click();
 			message = 'Microphone is OFF';
-			icon = chrome.runtime.getURL('mute.png');
+			icon = chrome.runtime.getURL('mute.svg');
 			sendResponse({
 				notification: {
 					type: 'basic',
@@ -32,7 +32,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 		if (btn !== null) {
 			btn.click();
 			message = 'Microphone is ON';
-			icon = chrome.runtime.getURL('unmute.png');
+			icon = chrome.runtime.getURL('unmute.svg');
 			sendResponse({
 				notification: {
 					type: 'basic',
