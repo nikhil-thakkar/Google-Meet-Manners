@@ -8,3 +8,6 @@ Hope this helps to tidy up your online meeting manners :wink:.
 * Download the source code.
 * Use the step-by-step guide from [here](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/).
 * Don't forget to assign a shortcut for this extension by using chrome://extensions. Here is a [guide](https://www.webnots.com/how-to-assign-keyboard-shortcuts-to-chrome-extensions/) if you feel lost.
+
+# Notes
+Tested on Chrome version 80.0.3987.149 running on macOS Mojave version 10.14.6.
